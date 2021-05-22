@@ -32,6 +32,7 @@ export class HttpService {
       this.users = [];
       this.http.get<ApiResponse>(searchEndpoint).toPromise().then(
         (results: any)=>{
+          console.log(results)
         this.users.push(results);
         console.log(results)
         resolve();
