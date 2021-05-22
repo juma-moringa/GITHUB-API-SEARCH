@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 import { RepooComponent } from './repoo/repoo.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { RepooComponent } from './repoo/repoo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

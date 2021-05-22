@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
+import { User } from '../user';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  users!:Users[];
+  users!:User[];
 
   searchUserName(username: string){
    this.httpServiceService.findUser(username).then(
@@ -20,7 +23,7 @@ export class LandingPageComponent implements OnInit {
      }
    )
   }
-  constructor(public httpServiceService:HttpServiceService) { }
+  constructor(public httpServiceService:HttpService) { }
 
   ngOnInit() {
     
