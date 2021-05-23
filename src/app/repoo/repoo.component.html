@@ -5,9 +5,9 @@
   <h2 class="text-center pt-5 heading">Repository Search</h2>
   <app-search (emitUserName)="findRepo($event)"></app-search>
   <div class="container-fluid  card-columns pt-5">
-    <div class="card text-black" *ngFor="let repo of myRepos">
+    <div class="card text-black" *ngFor="let repo of myRepos"appHighlight>
       <div class="card">
-        <div class="card-header text-center ">
+        <div class="card-header text-center "appHighlight>
           <h2>{{repo.name}}</h2>
         </div>
         <div class="card-body">
@@ -18,7 +18,7 @@
                 class="fab fa-github"></i></button>
           </a>
         </div>
-        <div class="card-footer flex-footer">
+        <div class="card-footer flex-footer"appHighlight>
 
           <p>Forks: {{repo.forks}}</p>
           <p>Default branch: {{repo.default_branch}}</p>

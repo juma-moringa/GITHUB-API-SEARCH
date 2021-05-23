@@ -11,6 +11,8 @@ import { RepooComponent } from './repoo/repoo.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
+
 // import { from } from 'rxjs';
 
 @NgModule({
@@ -21,7 +23,9 @@ import { DateCountPipe } from './date-count.pipe';
     SearchComponent,
     PageNotfoundComponent,
     RepooComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective,
+   
   ],
   imports: [
     BrowserModule,
