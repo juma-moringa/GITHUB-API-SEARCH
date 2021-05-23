@@ -1,18 +1,18 @@
 <div style="font-family: 'Chela One', cursive;">
   <br>
   <br>
-  <h2 class="text-center pt-5 heading">github SearchEngine</h2>
+  <h2 class="text-center pt-5 heading">Github SearchEngine</h2>
   <app-search (emitUserName)="searchUserName($event)"></app-search>
   <div class="row" *ngFor="let user of users">
     <div class="col-md-5 pt-5">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body bg-info">
           <div class="container contents">
             <div>
               <img src="{{user.avatar_url}}" class="card-img rounded-circle ">
               <h1 class="text-dark" style="padding:25px">{{user.name}}</h1>
-              <hr>
-              <h2 class="text-dark" style="padding:12x">{{user.bio}}</h2>
+              <hr style="color:white;">
+              <h3 class="text-dark" style="padding:12x">{{user.bio}}</h3>
             </div>
           </div>
         </div>
@@ -26,10 +26,10 @@
           <div class="card-header">
             <h1 class="text-info" style="padding:20px">{{user.login}}</h1>
             <hr>
-            <p><strong>Repositories:</strong> {{user.public_repos}}</p>
-            <p><strong>Located at:</strong> {{user.location}}</p>
-            <p><strong>Email:</strong> {{user.website}}</p>
-            <p><strong>Created at:</strong> {{user.created_at|date}} </p>
+            <p><strong>Repositories: </strong> {{user.public_repos}}</p>
+            <p><strong>Located at: </strong> {{user.location}}</p>
+            <p><strong>Email: </strong> {{user.website}}</p>
+            <p><strong>Created on: </strong> {{user.created_at|date}} </p>
             <p><strong>Followed by:</strong> {{user.followers}} followers</p>
             <p><strong>Following:</strong> {{user.following}}</p>
           </div>
