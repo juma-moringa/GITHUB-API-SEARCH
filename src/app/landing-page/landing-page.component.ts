@@ -19,6 +19,8 @@ export class LandingPageComponent implements OnInit {
        console.log(this.users);
      },
      (error: any)=>{
+
+      
        console.log(error)
      }
    )
