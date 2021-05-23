@@ -10,6 +10,7 @@ import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 import { RepooComponent } from './repoo/repoo.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { DateCountPipe } from './date-count.pipe';
 // import { from } from 'rxjs';
 
 @NgModule({
@@ -19,7 +20,8 @@ import {HttpClientModule} from '@angular/common/http';
     NavbarComponent,
     SearchComponent,
     PageNotfoundComponent,
-    RepooComponent
+    RepooComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
