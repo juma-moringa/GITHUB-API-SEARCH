@@ -2,7 +2,8 @@
 ## Author
 Juma Allan
 ## Description
-Its an application that displays quote ,and a user is able to add new quote and also delete the quote.The quotes also can be upvoted and downvoted  according to the user preferences.
+
+Github app to search for user profiles and repositories...
 
 # GITHUBAPISEARCH
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
