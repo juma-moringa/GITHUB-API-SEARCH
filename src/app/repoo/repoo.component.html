@@ -13,11 +13,16 @@
         <div class="card-body">
           <p>{{repo.description}}</p>
           <p>{{repo.language}}</p>
+          <a href="{{ repo.html_url }}" target="_blank">
+            <button style="color:blue;" class="btn btn-dark">view on GitHub <i
+                class="fab fa-github"></i></button>
+          </a>
         </div>
         <div class="card-footer flex-footer">
 
           <p>Forks: {{repo.forks}}</p>
           <p>Default branch: {{repo.default_branch}}</p>
+          
         </div>
       </div>
     </div>

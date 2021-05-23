@@ -1,5 +1,6 @@
 export class Repositories {
   description: any;
+  html_url: any;
   name: any;
   owner: any;
   forks: any;

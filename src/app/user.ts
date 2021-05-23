@@ -5,6 +5,7 @@ export class User {
   public bio: any;
   public name: any;
   public location: any;
+  website: any;
   followers: any;
   following: any;
   created_at!: Date;
