@@ -42,7 +42,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Enjoy
 
 ### Live Site
-View [live]()
+View [live](https://juma-moringa.github.io/GITHUB-API-SEARCH/)
 ### Licence
 This project is under the  [MIT](license) licence.
 
