@@ -13,7 +13,7 @@ export class RepooComponent implements OnInit {
   constructor(public repoService:ReposServiceService) { }
 
   findRepo(username:string){
-    this.repoService.getRepoInfo(username).subscribe((data: Repositories[]) =>{
+    this.repoService.getRepoInfo(username).subscribe((data:Repositories[]) =>{
       this.myRepos = data;
       console.log(this.myRepos)
 
