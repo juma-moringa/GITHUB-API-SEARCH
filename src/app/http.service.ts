@@ -8,6 +8,7 @@ import { User } from './user';
 })
 export class HttpService {
   users:User[] = [];
+  Api_key!: string;
 
   constructor(private http:HttpClient) { 
     
@@ -27,7 +28,7 @@ export class HttpService {
       public_repos: any
     }
     
-    let searchEndpoint = "https://api.github.com/users/"+username+"?access_token="+environment.gitApi_key
+    let searchEndpoint = "https://api.github.com/users/"+username+"?access_token="+this.Api_key
     ;
     let promise = new Promise<void>((resolve,reject)=>{
       this.users = [];
