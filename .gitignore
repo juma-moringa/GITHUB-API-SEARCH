@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/src/environments/environments.ts
 # Only exists if Bazel was run
 /bazel-out
 
@@ -45,5 +46,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/src/environments/environments.ts
-environment.ts
+
+# environment.ts
